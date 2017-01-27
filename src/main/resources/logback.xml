@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+
+	<appender name="APPLICATION-LOG"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>C:/Users/grkuma/Dropbox/logs/review-aggregator-electronics.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>C:/Users/grkuma/Dropbox/logs/review-aggregator-electronics.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+		<MinIndex>1</MinIndex>
+		<MaxIndex>10</MaxIndex>
+		</rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+        <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+
+		<encoder>
+			<pattern>%d{dd/MMM/YYYY:HH:mm:ss.SSS} [%thread] %marker %-5level %logger{36}.%M\(%line\) - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="INFO">
+		<appender-ref ref="APPLICATION-LOG" />
+	</root>
+
+</configuration>

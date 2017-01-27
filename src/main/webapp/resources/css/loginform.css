@@ -1,0 +1,148 @@
+@CHARSET "ISO-8859-1";
+.email_dialog_overlay
+{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   background: #000000;
+   opacity: .15;
+   filter: alpha(opacity=15);
+   -moz-opacity: .15;
+   z-index: 101;
+   display: none;
+}
+.email_dialog
+{
+   display: none;
+   position: fixed;
+   width: 400px;
+   height: 400px;
+   top: 25%;
+   left: 50%;
+   margin-left: -190px;
+   margin-top: -100px;
+   background-color: #ffffff;
+   border: 2px solid #000000;
+   padding: 0px;
+   padding-bottom:11px;
+   z-index: 102;
+   font-family: Verdana;
+   font-size: 10pt;
+}
+.web_dialog_title
+{
+   border-bottom: solid 2px #000000;
+   background-color: #000000;
+   padding: 4px;
+   color: White;
+   font-weight:bold;
+}
+.web_dialog_title a
+{
+   color: White;
+   text-decoration: none;
+}
+.align_right
+{
+   text-align: right;
+}
+.emailSubmit
+{
+ background-color:#FF9900;
+   border-radius: 7px;
+ -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+ color:#AABB33;; 
+ font-family:arial;
+ font-size:13px;
+ font-weight:bold; 
+ padding:10px 14px; 
+ text-decoration:none;
+}
+.emailtable
+{
+width: 100%;
+}
+ .container1 {
+     color: #727272;
+     width: 400px; 
+     margin: 0 auto;
+     margin-top:0px; 
+     background:#AABB33;
+	 border:1px solid #3b6e22;
+
+    } 
+
+ .admin_container {
+     color: #727272;
+     width: 400px; 
+     margin: 0 auto;
+     margin-top:0px; 
+     background:#AABB33;
+	 border:1px solid #3b6e22;
+
+    } 
+#header {
+  margin-bottom: 1px;  
+  position: relative; 
+   height: 60px; 
+
+ }
+  .logo{ 
+float:left;
+padding: 20px;
+font-size: 17px; 
+color:#ffffff;
+margin-bottom:5px;
+
+ }
+ 
+ .home{
+ margin-right: 10px; 
+ float:right; 
+ margin-top:16px;
+ }
+ 
+
+.pannel
+{
+padding:15px;
+ position: relative; 
+font-family : Tahoma;
+font-size : 9pt;
+font-style : normal;
+font-weight : bold;
+background-color:#FFFAFF;
+
+}
+
+
+
+#subbutton
+{
+/*background-color:#008F6B;*/
+background-color:#AABB33;
+ border:1px solid #3b6e22;
+ display:inline-block; 
+ color:#ffffff; 
+ font-family:arial; 
+ font-size:13px; 
+ font-weight:bold;
+ padding:8px 14px; 
+ text-decoration:none;
+}
+#heading
+{
+color:#AABB33;
+font-weight:bold;
+}
+.logintext,.signuptext{
+    cursor:pointer;
+    
+}

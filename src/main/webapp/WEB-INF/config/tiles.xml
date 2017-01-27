@@ -1,0 +1,236 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>  
+    <definition name="base.definition" template="/WEB-INF/views/Template.jsp">  
+        <put-attribute name="title" value=""></put-attribute>  
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp"></put-attribute>  
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp"></put-attribute>  
+        <put-attribute name="body" value=""></put-attribute>  
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp"></put-attribute>  
+    </definition>  
+    
+    
+    <definition name="base.user.definition" template="/WEB-INF/views/user/UserTemplate.jsp">  
+        <put-attribute name="title" value=""></put-attribute>  
+        <put-attribute name="header" value="/WEB-INF/views/user/UserHeader.jsp"></put-attribute>  
+        <put-attribute name="menu" value="/WEB-INF/views/user/UserMenu.jsp"></put-attribute>  
+        <put-attribute name="body" value=""></put-attribute>  
+        <put-attribute name="footer" value="/WEB-INF/views/user/UserFooter.jsp"></put-attribute>  
+    </definition>  
+    
+    <definition name="mobileDetailsView" template="/WEB-INF/views/user/details/MobileDetails.jsp"/>
+    <definition name="loadMoreLatestProduct" template="/WEB-INF/views/user/LoadMoreLatestProduct.jsp"/>
+    <definition name="loadMoreLatestReview" template="/WEB-INF/views/user/LoadMoreLatestReview.jsp"/>  
+    <definition name="mobielFilterListingView" template="/WEB-INF/views/user/list/MobileFilterResultList.jsp"/>  
+     <definition name="filteredSearchResult" template="/WEB-INF/views/user/search/SearchFilterResultList.jsp"/>  
+   
+          
+    
+    <!-- *****************************USER************************** --> 
+    
+        
+        <definition name="mobileDetailsBrowserView" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/details/MobileDetails.jsp" />
+     </definition>
+    
+    <definition name="frontMainView" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/FrontMainView.jsp" />
+     </definition>
+    
+   <!--  <definition name="productDetailsView" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/ProductDetails.jsp" />
+     </definition> -->
+    
+    <definition name="mobielListingView" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/list/MobileList.jsp" />
+     </definition>
+     
+     <definition name="searchResult" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/search/SearchList.jsp" />
+     </definition>
+     
+     
+    <definition name="trending" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/TrendingView.jsp" />
+     </definition>
+     
+    
+    <definition name="latestProduct" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/LatestProduct.jsp" />
+     </definition>
+     
+     <definition name="searchDetailsView" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/details/MobileDetails.jsp" />
+     </definition>
+     
+      <!-- *****************************USER PROFILE DETAILS************************** -->
+     
+     <definition name="myprofile" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/userDetails/UserProfile.jsp" />
+     </definition>
+     
+     <definition name="myfavs" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/userDetails/UserFav.jsp" />
+     </definition>
+     
+     <definition name="myreviews" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/userDetails/UserReview.jsp" />
+     </definition>
+     
+     <definition name="myratings" extends="base.user.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/user/userDetails/UserRating.jsp" />
+     </definition>
+     
+     <!-- *******************************Care****************************** -->
+   <definition name="base.care.definition" template="/WEB-INF/views/care/CareTemplate.jsp">  
+        <put-attribute name="title" value=""></put-attribute>  
+        <put-attribute name="header" value="/WEB-INF/views/care/CareHeader.jsp"></put-attribute>  
+        <put-attribute name="menu" value="/WEB-INF/views/care/CareMenu.jsp"></put-attribute>  
+        <put-attribute name="body" value=""></put-attribute>  
+        <put-attribute name="footer" value="/WEB-INF/views/care/CareFooter.jsp"></put-attribute>  
+    </definition>  
+     
+     <definition name="care" extends="base.care.definition">
+     <put-attribute name="body"
+        value="/WEB-INF/views/care/CareBody.jsp" />
+     </definition>
+     
+     <definition name="careSubmitInfo" extends="base.care.definition">
+     <put-attribute name="body"
+        value="/WEB-INF/views/care/CareSubmitInfo.jsp" />
+     </definition>
+     
+      <definition name="careDeleteInfo" template="/WEB-INF/views/care/CareSubmitInfo.jsp">
+     </definition>
+     
+      <definition name="careLogin" template="/WEB-INF/views/care/CareLogin.jsp">
+     </definition>
+     
+     <definition name="careSearchResult" template="/WEB-INF/views/care/CareSearchResult.jsp">
+     </definition>
+     
+     <definition name="createMobile"
+        template="/WEB-INF/views/care/create_view_edit_mobile.jsp" />
+     
+     <definition name="createCamera" 
+        template="/WEB-INF/views/care/create_view_edit_camera.jsp" />
+     <definition name="createLaptop" 
+        template="/WEB-INF/views/care/create_view_edit_laptop.jsp" />
+     <definition name="createTablet" 
+        template="/WEB-INF/views/care/create_view_edit_tablet.jsp" />
+     <definition name="createHeadphone"
+        template="/WEB-INF/views/care/create_view_edit_headphone.jsp" />
+     
+     
+    <!-- *****************************ADMIN************************** -->
+    <definition name="index" extends="base.definition">
+    <put-attribute name="body"
+        value="/WEB-INF/views/body.jsp" />
+     </definition>
+
+   
+     <definition extends="base.definition" name="addProductForCategories">  
+        <put-attribute name="title" value="Add Product |${category}"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/Product/AddProductForCategory.jsp"></put-attribute>  
+    </definition>  
+    
+     <definition extends="base.definition" name="404NotFound">  
+        <put-attribute name="title" value="Add Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/404NotFound.jsp"></put-attribute>  
+    </definition>
+     
+    
+  
+      
+    <definition extends="base.definition" name="adminlogin">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/login/AdminLogin.jsp"></put-attribute>  
+    </definition> 
+    
+    <!-- ************Listing of product for a category************* -->
+     <definition extends="base.definition" name="mobileList">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/list/MobileList.jsp"></put-attribute>  
+    </definition>
+    
+     <definition extends="base.definition" name="cameraList">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/list/CameraList.jsp"></put-attribute>  
+    </definition>
+    
+     <definition extends="base.definition" name="tabletList">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/list/TabletList.jsp"></put-attribute>  
+    </definition>
+    
+      <definition extends="base.definition" name="laptopList">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/list/LaptopList.jsp"></put-attribute>  
+    </definition>
+    
+     <definition extends="base.definition" name="headphoneList">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/list/HeadphoneList.jsp"></put-attribute>  
+    </definition>
+    
+    
+       <!--   **************add or update product************************** -->
+      <definition extends="base.definition" name="addOrUpdateMobile">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/AddOrUpdateProduct/AddOrUpdateMobile.jsp"></put-attribute>  
+    </definition> 
+    
+     <definition extends="base.definition" name="addOrUpdateCamera">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/AddOrUpdateProduct/AddOrUpdateCamera.jsp"></put-attribute>  
+    </definition> 
+    <definition extends="base.definition" name="addOrUpdateTablet">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/AddOrUpdateProduct/AddOrUpdateTablet.jsp"></put-attribute>  
+    </definition> 
+     <definition extends="base.definition" name="addOrUpdateLaptop">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/AddOrUpdateProduct/AddOrUpdateLaptop.jsp"></put-attribute>  
+    </definition> 
+     <definition extends="base.definition" name="addOrUpdateHeadphone">  
+        <put-attribute name="title" value="Admin Login"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/AddOrUpdateProduct/AddOrUpdateHeadphone.jsp"></put-attribute>  
+    </definition> 
+    
+    
+  <!--   *****************show indivisual product**************************** -->
+    <definition extends="base.definition" name="showMobile">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/show/ShowMobile.jsp"></put-attribute>  
+    </definition>
+    <definition extends="base.definition" name="showCamera">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/show/ShowCamera.jsp"></put-attribute>  
+    </definition>
+     <definition extends="base.definition" name="showTablet">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/show/ShowTablet.jsp"></put-attribute>  
+    </definition>
+     <definition extends="base.definition" name="showHeadphone">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/show/ShowHeadphone.jsp"></put-attribute>  
+    </definition>
+     <definition extends="base.definition" name="showLaptop">  
+        <put-attribute name="title" value="List Product"></put-attribute>  
+        <put-attribute name="body" value="/WEB-INF/views/show/ShowLaptop.jsp"></put-attribute>  
+    </definition>
+   
+</tiles-definitions>  
